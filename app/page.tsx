@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { ArrowRight, CheckCircle, Zap } from "lucide-react";
 import { FadeInOnView } from "@/components/FadeInOnView";
+import { SpotlightCard } from "@/components/SpotlightCard";
+import { StatusPill } from "@/components/case-studies/StatusPill";
+import { projects } from "@/lib/case-studies-data";
 
 /* ─── Data ─────────────────────────────────────────────────────────── */
 
@@ -433,6 +436,45 @@ export default function HomePage() {
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </FadeInOnView>
+          </div>
+        </div>
+      </section>
+
+      {/* ══ SELECTED ENGAGEMENTS ═══════════════════════════════════════ */}
+      <section className="py-28 relative overflow-hidden">
+        <div className="container">
+          <FadeInOnView className="text-center mb-14">
+            <span className="inline-block rounded-full border border-accent/40 bg-accent/10 px-3.5 py-1 text-xs font-bold text-accent uppercase tracking-wider mb-4">
+              Our Work
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold">
+              Selected{" "}
+              <span style={{ color: "var(--unify-blue)" }}>engagements</span>
+            </h2>
+            <p className="mt-3 text-muted-foreground max-w-lg mx-auto">
+              A look inside the workshop — real builds, real problems, real
+              outcomes.
+            </p>
+          </FadeInOnView>
+
+          <div className="grid md:grid-cols-3 gap-5">
+            {projects.map((project, i) => (
+              <FadeInOnView key={project.id} style={{ transitionDelay: `${i * 80}ms` }}>
+                <SpotlightCard href={`/case-studies/#${project.id}`} className="h-full flex flex-col gap-4">
+                  <div className="flex items-center justify-between gap-3">
+                    <StatusPill status={project.status} />
+                  </div>
+                  <h3 className="text-lg font-semibold leading-snug">{project.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed flex-1">
+                    {project.oneLiner}
+                  </p>
+                  <span className="inline-flex items-center gap-1.5 text-sm font-medium text-primary">
+                    Read the build
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </span>
+                </SpotlightCard>
+              </FadeInOnView>
+            ))}
           </div>
         </div>
       </section>

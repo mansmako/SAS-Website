@@ -84,6 +84,28 @@
   --radius: 0.75rem;
 }
 
+/* ── Case Studies / "Workshop" brand tokens (raw hex, from brand doc) ── */
+:root {
+  --unify-blue:    #008ad1;
+  --spiritus-gray: #36373d;
+  --solid-black:   #000000;
+  --focus-white:   #ffffff;
+
+  --africa-gold:   #e0af00;
+  --tailor-red:    #a00000;
+
+  --cs-bg:        #0a0a0a;
+  --cs-bg-2:      #111111;
+  --cs-bg-3:      #161616;
+  --cs-border:    rgba(255, 255, 255, 0.07);
+  --cs-border-hi: rgba(255, 255, 255, 0.14);
+  --cs-text:      #f0ede8;
+  --cs-text-mut:  #8a8a8a;
+  --cs-text-dim:  #555555;
+  --cs-blue-soft: rgba(0, 138, 209, 0.12);
+  --cs-blue-text: #4db4e8;
+}
+
 html {
   scroll-behavior: smooth;
 }
