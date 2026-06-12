@@ -27,10 +27,10 @@ const heroPills = [
 ];
 
 const stats = [
-  { value: "3×", label: "Faster decisions" },
-  { value: "40%", label: "Cost reduction" },
-  { value: "<8 wks", label: "Pilot to production" },
-  { value: "100%", label: "Local context" },
+  { value: "Frontier-grade", label: "Built on the best available AI and agentic infrastructure" },
+  { value: "SADC-native", label: "Deployed in-market, in local context" },
+  { value: "Custom-built", label: "Tailored to your workflows, not off-the-rack" },
+  { value: "Audit-ready", label: "Maker-checker controls on every action" },
 ];
 
 const integrations = [
@@ -52,27 +52,6 @@ const processSteps = [
   { step: "04", title: "Scale", desc: "Prove KPIs in weeks, then expand across your business with confidence." },
 ];
 
-const testimonials = [
-  {
-    quote:
-      "Spiritus transformed how we handle leads. What used to take our team hours now happens automatically — with full audit trails every step of the way.",
-    name: "Thabo M.",
-    title: "Operations Director",
-  },
-  {
-    quote:
-      "The agents integrate directly into our Sage environment. Invoice matching that used to take days now completes in minutes — with zero errors.",
-    name: "Zanele K.",
-    title: "Finance Manager, Cape Town",
-  },
-  {
-    quote:
-      "We went from pilot to full deployment in six weeks. The FDE team ensured everything worked in our context, our language, our culture.",
-    name: "Pieter V.",
-    title: "CEO, SME Distributor",
-  },
-];
-
 /* ─── Page ──────────────────────────────────────────────────────────── */
 
 export default function HomePage() {
@@ -91,7 +70,7 @@ export default function HomePage() {
               <FadeInOnView>
                 <div className="inline-flex items-center gap-2.5 rounded-full border border-accent/40 bg-accent/10 px-4 py-1.5 text-sm font-semibold text-accent">
                   <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
-                  Now building for businesses worldwide
+                  SILICON VALLEY-BASED · AFRICA-ROOTED
                 </div>
               </FadeInOnView>
 
@@ -100,20 +79,20 @@ export default function HomePage() {
                 className="text-5xl md:text-6xl lg:text-[4.25rem] font-bold tracking-tight leading-[1.04] text-glow"
                 style={{ transitionDelay: "80ms" }}
               >
-                AI, custom-built for your reality.
+                Silicon Valley AI. Built for African ground.
               </FadeInOnView>
 
               <FadeInOnView
                 className="text-lg text-muted-foreground max-w-lg leading-relaxed"
                 style={{ transitionDelay: "160ms" }}
               >
-                We create, implement, and scale autonomous digital employees —
-                AI Agents that not only deliver insights but take{" "}
+                We work at the frontier of AI — the most advanced models and
+                agentic infrastructure available today — and we build it for
+                the realities of business across SADC.{" "}
                 <strong className="text-foreground font-semibold">
-                  decisive action
-                </strong>
-                . Built so your business grows with reduced costs, increased
-                control, and faster decisions.
+                  Global capability. Local terrain.
+                </strong>{" "}
+                Nothing lost in translation.
               </FadeInOnView>
 
               <FadeInOnView
@@ -124,7 +103,7 @@ export default function HomePage() {
                   href="/contact"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-all duration-200 hover:bg-primary/90 hover:shadow-[0_0_32px_hsl(200_100%_41%/0.45)]"
                 >
-                  Get a Demo
+                  Partner with us
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <Link
@@ -492,32 +471,11 @@ export default function HomePage() {
             </p>
           </FadeInOnView>
 
-          <div className="grid md:grid-cols-3 gap-5">
-            {testimonials.map((t, i) => (
-              <FadeInOnView
-                key={t.name}
-                className="flex flex-col gap-5 rounded-2xl border border-border/40 bg-card/60 p-6 hover:border-primary/25 transition-colors"
-                style={{ transitionDelay: `${i * 100}ms` }}
-              >
-                {/* Quote marks */}
-                <span className="text-3xl text-primary/30 font-serif leading-none select-none">
-                  &ldquo;
-                </span>
-                <p className="text-sm text-muted-foreground leading-relaxed flex-1 -mt-4">
-                  {t.quote}
-                </p>
-                <div className="flex items-center gap-3 pt-2 border-t border-border/30">
-                  <div className="h-9 w-9 rounded-full bg-primary/15 flex items-center justify-center text-primary text-sm font-bold shrink-0">
-                    {t.name[0]}
-                  </div>
-                  <div>
-                    <p className="text-sm font-semibold">{t.name}</p>
-                    <p className="text-xs text-muted-foreground">{t.title}</p>
-                  </div>
-                </div>
-              </FadeInOnView>
-            ))}
-          </div>
+          <FadeInOnView className="text-center">
+            <p className="text-muted-foreground">
+              Client stories coming soon — we&apos;re early, and building in the open.
+            </p>
+          </FadeInOnView>
         </div>
       </section>
 

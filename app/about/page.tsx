@@ -72,12 +72,28 @@ export default function AboutPage() {
                 Why should world-class AI only work<br />
                 <span className="text-primary">in Silicon Valley?</span>
               </h1>
-              <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-2xl">
-                That question is why Spiritus Agentic Solutions exists. We took the
-                same disciplines, tools, and intelligence used by the world&apos;s
-                biggest organisations and made them accessible to growing businesses
-                everywhere — the companies that are the backbone of their economies.
-              </p>
+              <div className="mt-6 space-y-4 text-lg text-muted-foreground leading-relaxed max-w-2xl">
+                <p>
+                  Most firms in African markets are one of two things: a local
+                  startup without access to frontier technology, or a global
+                  player with no feel for the ground. We are deliberately both.
+                </p>
+                <p>
+                  We are Silicon Valley-based and Africa-rooted. Our presence
+                  at the frontier gives us direct access to the most advanced
+                  AI and agentic infrastructure in the world — the same stack
+                  reshaping global industry. Our roots across SADC mean we
+                  understand the last mile: the languages, the payment rails,
+                  the infrastructure, the way business actually gets done here.
+                </p>
+                <p>
+                  African businesses have been locked out of the AI
+                  productivity wave — not for lack of ambition, but for lack
+                  of access. We close that gap. We build what global firms
+                  can&apos;t, because they don&apos;t know the terrain the way
+                  we do.
+                </p>
+              </div>
             </FadeInOnView>
           </div>
         </div>
