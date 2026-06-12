@@ -8,7 +8,7 @@ import { DocFrame } from "@/components/case-studies/DocFrame";
 import type { Project } from "@/lib/case-studies-data";
 
 // Replace with the real WhatsApp business number when available.
-const AWFII_WHATSAPP_NUMBER = "<WHATSAPP_NUMBER>";
+const WHATSAPP_CTA_NUMBER = "<WHATSAPP_NUMBER>";
 
 export function ProjectSection({ project }: { project: Project }) {
   return (
@@ -133,11 +133,11 @@ export function ProjectSection({ project }: { project: Project }) {
           </div>
         </FadeInOnView>
 
-        {/* WhatsApp CTA (AWFII only) */}
+        {/* WhatsApp CTA */}
         {project.whatsappCta && (
           <FadeInOnView className="mt-12" style={{ transitionDelay: "260ms" }}>
             <a
-              href={`https://wa.me/${AWFII_WHATSAPP_NUMBER}`}
+              href={`https://wa.me/${WHATSAPP_CTA_NUMBER}`}
               target="_blank"
               rel="noreferrer noopener"
               className="inline-flex items-center gap-2 rounded-full bg-[var(--unify-blue)] px-6 py-3 text-sm font-semibold text-white transition-all hover:shadow-[0_0_32px_rgba(0,138,209,0.45)]"
@@ -146,7 +146,7 @@ export function ProjectSection({ project }: { project: Project }) {
               Try it on WhatsApp
             </a>
             <p className="mt-2 text-xs text-[var(--cs-text-dim)]">
-              Placeholder number — replace <code>AWFII_WHATSAPP_NUMBER</code> with the live business
+              Placeholder number — replace <code>WHATSAPP_CTA_NUMBER</code> with the live business
               number.
             </p>
           </FadeInOnView>

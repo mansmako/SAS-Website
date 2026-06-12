@@ -63,15 +63,14 @@ export const projects: Project[] = [
       "MVP complete and handed to independent QA (125-case test register). Architecture proven end-to-end: form → master sheet → weekly workflow → Slack + audit CSV.",
   },
   {
-    id: "awfii",
+    id: "fin-literacy-whatsapp",
     status: "Live",
-    title: "AWFII WhatsApp Financial Literacy Chatbot",
+    title: "WhatsApp Financial Literacy Chatbot",
     sector: "Fintech · Financial Inclusion",
     oneLiner:
       "Financial literacy guidance delivered where people already are — on WhatsApp.",
-    repo: "https://github.com/mansmako/awfii-chatbot",
     problem:
-      "Financial literacy resources rarely reach the people who need them most, and almost never in a channel they already use daily. AWFII meets South African users on WhatsApp — no app to download, no barrier to entry.",
+      "Financial literacy resources rarely reach the people who need them most, and almost never in a channel they already use daily. This chatbot meets South African users on WhatsApp — no app to download, no barrier to entry.",
     triangle: [
       { label: "Input", sub: "Twilio (WhatsApp)" },
       { label: "Logic", sub: "n8n + LangChain / Groq" },
@@ -129,6 +128,6 @@ export const projects: Project[] = [
       { frame: "doc", caption: "Roadmap timeline", variant: "timeline" },
     ],
     outcome:
-      "In active development. Strategy defined; build underway reusing proven AWFII components.",
+      "In active development. Strategy defined; build underway reusing proven components from our financial-literacy chatbot.",
   },
 ];
