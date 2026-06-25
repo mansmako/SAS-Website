@@ -122,7 +122,7 @@ export default function ProcessPage() {
                 Ready to Build the Future?
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Let's start the conversation and explore how agentic AI can
+                Let&apos;s start the conversation and explore how agentic AI can
                 revolutionize your business.
               </p>
             </div>

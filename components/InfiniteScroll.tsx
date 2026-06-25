@@ -54,7 +54,7 @@ export default function InfiniteScroll({
         const container = containerRef.current;
         if (!container || items.length === 0) return;
 
-        const divItems = gsap.utils.toArray<HTMLElement>(container.children as any);
+        const divItems = gsap.utils.toArray<HTMLElement>(Array.from(container.children) as HTMLElement[]);
         if (!divItems.length) return;
 
         // equal heights keep wrap math stable
@@ -140,7 +140,7 @@ export default function InfiniteScroll({
 
             return () => {
                 observer.kill();
-                rafId && cancelAnimationFrame(rafId);
+                if (rafId) cancelAnimationFrame(rafId);
             };
         }
 

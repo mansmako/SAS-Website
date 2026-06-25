@@ -13,6 +13,7 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/process", label: "Process" },
+  { href: "/learn", label: "Learn" },
 ]
 
 export function Header() {

@@ -12,7 +12,7 @@ export default function ContactPage() {
           <CardHeader>
             <CardTitle className="text-3xl">Contact Us</CardTitle>
             <CardDescription>
-              Have a project in mind? Fill out the form below and we'll get back to you.
+              Have a project in mind? Fill out the form below and we&apos;ll get back to you.
             </CardDescription>
           </CardHeader>
           <CardContent>

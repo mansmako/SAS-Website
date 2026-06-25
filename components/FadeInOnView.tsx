@@ -49,7 +49,7 @@ export function FadeInOnView<T extends ElementType = "div">({
 
     return (
         <Tag
-            ref={ref as any}
+            ref={ref as React.Ref<HTMLElement>}
             className={cn(
                 "opacity-0 translate-y-4 transition-all duration-500 ease-out will-change-transform will-change-opacity",
                 "motion-reduce:transition-none motion-reduce:opacity-100 motion-reduce:translate-y-0",
