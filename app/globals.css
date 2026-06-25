@@ -79,8 +79,8 @@
   --ring: 201 100% 56%;
 }
 
-/* Optional: ensure dark look even without a toggle */
-html {
+/* Scope color-scheme to the .dark class so light-mode variables work if toggle is ever added */
+.dark {
   color-scheme: dark;
 }
 

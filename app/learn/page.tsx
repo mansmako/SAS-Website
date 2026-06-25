@@ -205,12 +205,12 @@ export default function LearnPage() {
               The Spiritus Knowledge Hub
             </div>
 
-            <h1 className="font-display text-4xl font-bold tracking-tighter sm:text-5xl lg:text-6xl">
+            <h1 className="font-display text-4xl font-bold tracking-tighter text-foreground sm:text-5xl lg:text-6xl">
               Intelligence from the{" "}
               <span className="text-primary">workshop</span>
             </h1>
 
-            <p className="text-muted-foreground text-lg max-w-xl leading-relaxed">
+            <p className="text-muted-foreground text-lg max-w-xl leading-relaxed text-foreground/70">
               Field notes, reviews, and ideas from the Spiritus team — frontier
               AI for SADC business, written by the people building it.
             </p>
