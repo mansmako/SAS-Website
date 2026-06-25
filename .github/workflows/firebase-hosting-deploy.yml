@@ -32,6 +32,4 @@ jobs:
       - name: Deploy to Firebase Hosting
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-        run: |
-          # Ensure we deploy the exported `out` directory
-          firebase deploy --only hosting --project "$FIREBASE_PROJECT" || firebase deploy --only hosting
+        run: firebase deploy --only hosting --project spiritus-agentic-solutions --token "$FIREBASE_TOKEN"
