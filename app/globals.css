@@ -84,16 +84,32 @@
   --radius: 0.75rem;
 }
 
-/* ── Case Studies / "Workshop" brand tokens (raw hex, from brand doc) ── */
+/* ── Brand constants (never change between modes) ── */
 :root {
   --unify-blue:    #008ad1;
   --spiritus-gray: #36373d;
   --solid-black:   #000000;
   --focus-white:   #ffffff;
-
   --africa-gold:   #e0af00;
   --tailor-red:    #a00000;
+}
 
+/* ── Case Studies tokens — light mode ── */
+:root {
+  --cs-bg:        #ffffff;
+  --cs-bg-2:      #f5f6f8;
+  --cs-bg-3:      #eceef2;
+  --cs-border:    rgba(0, 0, 0, 0.08);
+  --cs-border-hi: rgba(0, 0, 0, 0.15);
+  --cs-text:      #1a1b1e;
+  --cs-text-mut:  #6b7280;
+  --cs-text-dim:  #9ca3af;
+  --cs-blue-soft: rgba(0, 138, 209, 0.08);
+  --cs-blue-text: #006fa8;
+}
+
+/* ── Case Studies tokens — dark mode ── */
+.dark {
   --cs-bg:        #0a0a0a;
   --cs-bg-2:      #111111;
   --cs-bg-3:      #161616;
