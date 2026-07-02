@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
-import { db } from "@/lib/firebase";
+import { getDb } from "@/lib/firebase";
 import { ArrowRight, Mail, MapPin, Clock } from "lucide-react";
 import { FadeInOnView } from "@/components/FadeInOnView";
 
@@ -26,13 +26,16 @@ export default function ContactPage() {
     setSubmitting(true);
     setError(null);
     try {
-      await addDoc(collection(db, "contacts"), {
-        name,
-        email,
-        company,
-        message,
-        timestamp: new Date(),
-      });
+      const db = getDb();
+      if (db) {
+        await addDoc(collection(db, "contacts"), {
+          name, email, company, message, timestamp: new Date(),
+        });
+      } else {
+        // Firebase not configured — fall back to mailto
+        window.location.href =
+          `mailto:hello@spiritusagentic.com?subject=Contact%20from%20${encodeURIComponent(name)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nCompany: ${company}\n\n${message}`)}`;
+      }
       setSubmitted(true);
       setName(""); setEmail(""); setCompany(""); setMessage("");
     } catch (err) {
